@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Combat System</title>
+      <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+      <h1 class="heading" id="titleText">Combat System (Experimental)</h1>
+      <center id="gameDiv">
+        <div class="action-container">
+          <p class="heading">Choose an action!</p>
+          <div class="buttons-row">
+            <button class="button" id="fightButton">Fight</button>
+            <button class="button" id="itemButton">Item</button>
+            <button class="button" id="magicButton">Magic</button>
+            <button class="button" id="summonButton">Summon</button>
+          </div>
+        </div>
+        <div class="secondary-container">
+          <p class="counter" id="playerHealthText">Your health: 500/500</p>
+          <p class="counter" id="enemyHealthText">Goblin health: 2000/2000</p>
+          <div class="buttons-row" id="itemButtonsRow">
+            <button class="button" id="healingPotionButton">Healing Potion (5)</button>
+            <button class="button" id="ninjaStarButton">Ninja Star (8)</button>
+            <button class="button" id="strengthElixirButton">Strength Elixir (4)</button>
+            <button class="button" id="rustyShieldButton">Rusty Shield (1)</button>
+          </div>
+          <div class="buttons-row" id="magicButtonsRow">
+            <button class="button" id="fireballButton">Fireball (60%)</button>
+            <button class="button" id="thunderclapButton">Thunderclap (40%)</button>
+            <button class="button" id="shadowVortexButton">Shadow Vortex (25%)</button>
+            <button class="button" id="iceRainButton">Ice Rain (75%)</button>
+          </div>
+          <div class="buttons-row" id="summonButtonsRow">
+            <button class="button" id="abyssDrakeButton">Abyss Drake</button>
+            <button class="button" id="miniHydraButton">Mini Hydra</button>
+            <button class="button" id="magicWolfButton">Magic Wolf</button>
+          </div>
+          <hr style="width: 94%; border: 0.5px solid white;" id="divider">
+          <p class="counter" id="messageText">You ready your weapon...</p>
+          <p class="counter" id="messageText2">A goblin appeared!</p>
+          <div class="tooltip-container">
+            <span class="tutorial">ⓘ</span>
+            <span class="tooltip-text">To play, you can deal damage by using the fight button, which will deal a decent amount of damage. You can also click the 'magic' button to have a chance to deal massive damage. The chance of a spell landing is displayed next to the button text. Clicking the 'item' button will let you use temporary buffs or weapons to help in battle. The 'summon' button summons pets that do extra damage and other things until their health runs out.</span>
+          </div>
+        </div>
+      </center>
+      <script src="script.js"></script>
+   </body>
+</html>
+
+<!-- TODO: 
+ice dragon should be immune to ice rain and do 29-36 dmg and have 14000 hp
+-->

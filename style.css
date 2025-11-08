@@ -1,0 +1,191 @@
+body {
+  background-color: rgb(14, 14, 1);
+  font-family: 'Lexend', Sans-Serif;
+  user-select: none;
+}
+.heading, .counter {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.action-container {
+  background-color: rgb(40, 40, 40);
+  height: 240px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+}
+.buttons-row {
+  display: flex;
+  gap: 20px;
+}
+.button {
+  font-family: 'Lexend', Sans-Serif;
+  background-color: orange;
+  border: 2px solid black;
+  font-size: 24px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  position: relative;
+}
+.button:hover {
+  background-color: darkorange;
+  cursor: pointer;
+}
+.secondary-container {
+  margin-top: 40px;
+  background-color: rgb(24, 24, 24);
+  height: 304px;
+  width: 1080px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+}
+.counter {
+  font-size: 24px;
+  margin: 4px;
+  margin: 4px;
+}
+#itemButtonsRow {
+  display: none;
+}
+#magicButtonsRow {
+  display: none;
+}
+#summonButtonsRow {
+  display: none;
+}
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 400px;
+  background-color: rgb(68, 68, 68);
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 15px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 12px;
+  line-height: 1.4;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tutorial {
+  color: white;
+  font-size: 24px;
+  cursor: help;
+  padding: 5px;
+}
+.button-glow {
+  box-shadow: 0 0 10px orange, 0 0 30px orange, 0 0 60px orange;
+  transition: box-shadow 0.3s ease-in-out;
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-4px); }
+  20%, 40%, 60%, 80% { transform: translateX(4px); }
+  100% { transform: translateX(0); }
+}
+.shake-animation {
+  animation: shake 0.5s ease-in-out;
+}
+@keyframes shake2 {
+  0% { transform: translateX(0); }
+  5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% { transform: translateX(-100px); }
+  10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% { transform: translateX(100px); }
+  100% { transform: translateX(0); }
+}
+
+.shake-animation2 {
+  animation: shake2 1s ease-in-out;
+}
+@keyframes flash-red {
+  0% { background-color: rgb(14, 14, 1); }
+  50% { background-color: red; }
+  100% { background-color: rgb(14, 14, 1); }
+}
+
+.flash-background-red {
+  animation: flash-red 0.4s ease-in-out;
+}
+@keyframes flash-purple {
+  0% { background-color: rgb(14, 14, 1); }
+  50% { background-color: purple; }
+  100% { background-color: rgb(14, 14, 1); }
+}
+.flash-background-purple {
+  animation: flash-purple 0.4s ease-in-out;
+}
+@keyframes flash-orange {
+  0% { background-color: rgb(14, 14, 1); }
+  50% { background-color: orange; }
+  100% { background-color: rgb(14, 14, 1); }
+}
+.flash-background-orange {
+  animation: flash-orange 0.4s ease-in-out;
+}
+@keyframes flash-brown {
+  0% { background-color: rgb(14, 14, 1); }
+  50% { background-color: brown; }
+  100% { background-color: rgb(14, 14, 1); }
+}
+.flash-background-brown {
+  animation: flash-brown 0.4s ease-in-out;
+}
+@keyframes flash-yellow {
+  0% { background-color: rgb(14, 14, 1); }
+  50% { background-color: yellow; }
+  100% { background-color: rgb(14, 14, 1); }
+}
+.flash-background-yellow {
+  animation: flash-yellow 0.4s ease-in-out;
+}
+@keyframes flash-blue {
+  0% { background-color: rgb(14, 14, 1); }
+  50% { background-color: lightblue; }
+  100% { background-color: rgb(14, 14, 1); }
+}
+.flash-background-blue {
+  animation: flash-blue 0.4s ease-in-out;
+}
+@keyframes flash-white {
+  0% { background-color: rgb(14, 14, 1); }
+  50% { background-color: white; }
+  100% { background-color: rgb(14, 14, 1); }
+}
+.flash-background-white {
+  animation: flash-white 0.4s ease-in-out;
+}
+
+body {
+  background-color: rgb(14, 14, 1);
+  font-family: 'Lexend', Sans-Serif;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
