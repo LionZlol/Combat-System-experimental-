@@ -1,5 +1,6 @@
 # Combat-System-experimental-
 Soo i basically was messing around with js and got really bored and decided to make a full game with js so here's a cool thing hope you like it also these are the controls/tutorial:
+
 fight: does damage directly to an enemy
 item: temporary buffs/perks that go away once that item is used up
 magic: attacks that have a chance of missing or landing, with ones that land being pretty powerful
